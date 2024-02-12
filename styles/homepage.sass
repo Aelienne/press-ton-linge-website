@@ -1,0 +1,24 @@
+@import "_header"
+@import "_footer"
+
+$font_body: 'Roboto', sans-serif
+
+body
+    padding: 0px
+    margin: 0px
+    text-decoration: none
+    background-image: url(../imgs/bgpages.webp)
+    background-repeat: no-repeat
+    background-size: cover
+    font-family: $font_body
+    ul
+        list-style: none
+    main
+        section
+            ul
+                display: flex
+                flex-direction: column
+                li
+                    width: 50%
+                    &:nth-of-type(2)
+                        align-self: flex-end
