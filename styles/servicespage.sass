@@ -1,2 +1,71 @@
 @import "_header"
 @import "_footer"
+
+$font_body: 'Roboto', sans-serif
+
+body
+    padding: 0px
+    margin: 0px
+    text-decoration: none
+    background-image: url(../imgs/bgpages.webp)
+    background-repeat: no-repeat
+    background-size: cover
+    font-family: $font_body
+    ul
+        list-style: none
+    main
+        section
+            article
+                text-align: center
+            ul
+                list-style: none
+                display: flex
+                flex-direction: row
+                justify-content: center
+                justify-content: space-evenly
+                li
+                    cursor: pointer
+                    width: 150px
+                    height: 180px
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    justify-content: space-around
+                    text-align: center
+                    border: solid 1px black
+                    border-radius: 20%
+                    background-color: rgb(255, 255, 255, 0.5)
+                    &:hover
+                        background-color: rgb(0, 0, 0)
+                        p
+                            color: white
+                        a
+                            svg
+                                fill: white
+                                stroke: white
+                        a
+                            svg.iconshirt
+                                path
+                                    fill: white
+                                    stroke: white
+                    &:nth-of-type(2)
+                        p
+                            margin-top: -10px
+                    &:nth-of-type(3)
+                        p
+                            margin-top: 10px
+
+                    a
+                        margin-top: 20px
+                        svg
+                            &:nth-of-type(2)
+                                margin-top: 30px
+                        svg.iconshirt
+                            margin-top: -10px
+                            path
+                                fill: black
+                        svg.iconwash
+                            width: 90px
+                            height: 90px
+                        svg.iconhouse
+                            margin-top: -5px
