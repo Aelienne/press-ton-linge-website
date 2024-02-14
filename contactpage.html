@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/homepage.css" />
+    <link rel="stylesheet" href="styles/contactpage.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -56,7 +56,61 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section>
+        <form>
+          <h2>Contactez nous</h2>
+          <label for="prenom"></label>
+          <input
+            placeholder="Prénom"
+            type="text"
+            id="prenom"
+            name="prenom"
+            required
+          /><br />
+
+          <label for="nom"></label>
+          <input
+            placeholder="Nom"
+            type="text"
+            id="nom"
+            name="nom"
+            required
+          /><br />
+
+          <label for="telephone"></label>
+          <input
+            placeholder="Téléphone"
+            type="tel"
+            id="telephone"
+            name="telephone"
+            required
+          /><br />
+
+          <label for="message"></label>
+          <textarea
+            placeholder="Votre message"
+            id="message"
+            name="message"
+            rows="4"
+            required
+          ></textarea
+          ><br />
+
+          <button type="submit">Envoyer</button>
+        </form>
+        <iframe
+          width="100%"
+          height="600"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=34%20Rue%20Antoine%20Primat,%20France%20+(Press%20ton%20linge)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          ><a href="https://www.gps.ie/">gps systems</a></iframe
+        >
+      </section>
+    </main>
     <footer>
       <ul>
         <li>
