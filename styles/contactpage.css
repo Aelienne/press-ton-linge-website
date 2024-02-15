@@ -6,6 +6,9 @@ header section ul {
   padding: 0px;
   background: rgba(255, 255, 255, 0.5);
 }
+header section ul li h2 {
+  font-size: 30px;
+}
 header nav ul {
   padding: 0px;
   margin: 0px;
@@ -41,6 +44,14 @@ header nav ul li:nth-of-type(4) a svg:hover path {
   fill: white;
 }
 
+@media (max-width: 768px) {
+  header section ul li h1 {
+    display: none;
+  }
+  header section ul li h2 {
+    display: none;
+  }
+}
 footer ul {
   display: flex;
   justify-content: space-around;
@@ -82,6 +93,14 @@ footer ul li:nth-of-type(1) p {
   margin: 0px 0px 10px 0px;
 }
 
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer ul li p {
+  margin: 15px;
+}
+
 body {
   padding: 0px;
   margin: 0px;
@@ -89,21 +108,25 @@ body {
   background-image: url(../imgs/bgpages.webp);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: right;
   font-family: "Roboto", sans-serif;
 }
+
 body ul {
   list-style: none;
 }
 body main section {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  justify-content: space-around;
   padding: 50px;
   align-items: center;
+  padding: 150px 0px 150px 0px;
 }
 body main section form {
   display: flex;
   flex-direction: column;
-  width: 35%;
+  width: 600px;
   height: 460px;
   border: solid 1px black;
   border-radius: 10px;
@@ -146,6 +169,18 @@ body main section form button {
   color: white;
 }
 body main section iframe {
-  width: 40%;
+  width: 600px;
   height: 500px;
+}
+
+@media (max-width: 768px) {
+  body main section {
+    flex-wrap: wrap;
+  }
+  body main section form {
+    width: 500px;
+  }
+  body main section iframe {
+    width: 500px;
+  }
 }/*# sourceMappingURL=contactpage.css.map */

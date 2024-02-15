@@ -1,22 +1,21 @@
 @import "_header"
 @import "_footer"
+@import "_body"
 
 $font_body: 'Roboto', sans-serif
 
 body
-    padding: 0px
-    margin: 0px
-    text-decoration: none
-    background-image: url(../imgs/bgpages.webp)
-    background-repeat: no-repeat
-    background-size: cover
-    font-family: $font_body
     ul
         list-style: none
     main
         section
+            padding: 80px
+            padding-bottom: 220px
             article
                 text-align: center
+                font-size: 30px
+                padding-left: 30px
+                padding-bottom: 50px
             ul
                 list-style: none
                 display: flex
@@ -25,8 +24,8 @@ body
                 justify-content: space-evenly
                 li
                     cursor: pointer
-                    width: 150px
-                    height: 180px
+                    width: 200px
+                    height: 230px
                     display: flex
                     flex-direction: column
                     align-items: center
@@ -69,3 +68,12 @@ body
                             height: 90px
                         svg.iconhouse
                             margin-top: -5px
+// MEDIA Q
+@media (max-width: 768px)
+    body
+        main
+            section
+                ul
+                    flex-wrap: wrap
+                    li
+                        margin: 20px

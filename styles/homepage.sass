@@ -1,16 +1,10 @@
 @import "_header"
 @import "_footer"
+@import "_body"
 
 $font_body: 'Roboto', sans-serif
 
 body
-    padding: 0px
-    margin: 0px
-    text-decoration: none
-    background-image: url(../imgs/bgpages.webp)
-    background-repeat: no-repeat
-    background-size: cover
-    font-family: $font_body
     ul
         list-style: none
     main
@@ -18,7 +12,26 @@ body
             ul
                 display: flex
                 flex-direction: column
+                padding: 60px 40px 60px 40px
                 li
+                    margin: 30px
                     width: 50%
+                    border: solid 2px black
+                    border-radius: 20px
+                    background-color: rgba(255, 255, 255, 0.5)
+                    padding: 0px 10px 0px 10px
                     &:nth-of-type(2)
                         align-self: flex-end
+                    h2
+                        margin: 15px
+                        text-align: center
+// MEDIA Q
+@media (max-width: 768px)
+    body
+        main
+            section
+                ul
+                    flex-direction: row
+                    flex-wrap: wrap
+                    li
+                        width: 100%
